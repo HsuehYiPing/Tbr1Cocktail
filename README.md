@@ -1,0 +1,11 @@
+Dietary supplement cocktails improve social behaviors and neural ensembles of multiple autism models
+
+Tzyy-Nan Huang,1,# Ming-Hui Lin,1,2,#, Tsan-Ting Hsu,1 Chen-Hsin Yu1 
+and Yi-Ping Hsueh1,2* 
+
+#These authors contributed equally to this work. 
+Author affiliations:
+1 Institute of Molecular Biology, Academia Sinica, Taipei, 11529, Taiwan, ROC
+2 Molecular and Cell Biology, Taiwan International Graduate Program, Institute of Molecular Biology, Academia Sinica and Graduate Institute of Life Sciences, National Defense Medical Center, Taipei 11529, Taiwan, ROC 
+
+Autism spectrum disorders (ASD) are heterogeneous neurodevelopmental disorders caused by both genetic variations and environmental factors. Since synaptic function is particularly susceptible to ASD-linked conditions, we hypothesized that a cocktail of various nutrients that benefit synaptic function, such as zinc, BCAA and serine, would ameliorate various ASD-related phenotypes. We explored the effects of three different concentrations of supplement cocktails on three previously established mouse models (i.e. Tbr1+/–, Nf1+/– and Cttnbp2 M120I mice), revealing that both one-week and two-month treatments elicited beneficial effects on social behaviors without noticeable side effects. The supplement cocktails affected the synaptic proteomes of mutant mouse brains. In vivo calcium imaging further revealed that one week of supplementation with a cocktail corrected hyperactivity and hyperconnectivity of basolateral amygdalar neurons in Tbr1+/– mice. Thus, nutrient cocktails containing zinc, BCAA and serine improve synaptic function, modulate neuronal activity and ensembles, and control social behaviors in multiple ASD contexts.
