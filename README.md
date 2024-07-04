@@ -1,9 +1,8 @@
 Dietary supplement cocktails improve social behaviors and neural ensembles of multiple autism models
 
-Tzyy-Nan Huang,1,# Ming-Hui Lin,1,2,#, Tsan-Ting Hsu,1 Chen-Hsin Yu1 
-and Yi-Ping Hsueh1,2* 
+Tzyy-Nan Huang,1, Ming-Hui Lin,1,2, Tsan-Ting Hsu,1 Chen-Hsin Yu1 
+and Yi-Ping Hsueh1,2 
 
-#These authors contributed equally to this work. 
 Author affiliations:
 1 Institute of Molecular Biology, Academia Sinica, Taipei, 11529, Taiwan, ROC
 2 Molecular and Cell Biology, Taiwan International Graduate Program, Institute of Molecular Biology, Academia Sinica and Graduate Institute of Life Sciences, National Defense Medical Center, Taipei 11529, Taiwan, ROC 
