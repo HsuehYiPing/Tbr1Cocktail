@@ -21,8 +21,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import warnings
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning) 
 
-dsets = ["NO.1"]
-# dsets = ["NO.1", "NO.2", "NO.3", "NO.8", "NO.13", "NO.15", "NO.16", "NO.20"]
+dsets = ["NO.1", "NO.2", "NO.3", "NO.8", "NO.13", "NO.15", "NO.16", "NO.20"]
 dstatus = ["OE", "RSI"]
 dtreatments = ["Water", "Cocktail"]
 
