@@ -16,3 +16,6 @@ Autism spectrum disorders (ASD) are heterogeneous neurodevelopmental disorders c
 
 2. Parsing the cell type across sessions.  
    --> parsing_cell_type_to_links.py
+
+# Acknowledgements
+  We thank Academia Sinica Common Mass Spectrometry Facilities for Proteomics and Protein Modification Analysis located at the Institute of Biological Chemistry, Academia Sinica (supported by AS-CFII-108-107), the Transgenic Core Facility located at the Institute of Molecular Biology, Academia Sinica (supported by AS-CFII-108-104), the Mass Spectrometry Facility of the Genomics Core at the Institute of Molecular Biology, Dr. John O’Brien for English editing, and members of Y.-P.H.’s laboratory who relabeled samples for blind experiments. 
