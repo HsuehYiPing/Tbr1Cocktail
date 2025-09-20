@@ -33,7 +33,7 @@ The files `*_acc.csv` and `Multi-session_registration_*.csv` were generated usin
 │   │   ├── OE/
 │   │   │   ├── *_acc.csv
 │   │   │   ├── *_behavior_period.csv
-│   │   │   └── *_blank_frame.csv          # included only when some neuronal data are missing
+│   │   │   └── *_blank_frame.csv     # included only when some neuronal data are missing
 │   │   └── RSI/
 │   │       ├── *_acc.csv
 │   │       ├── *_behavior_period.csv
@@ -56,7 +56,7 @@ The files `*_acc.csv` and `Multi-session_registration_*.csv` were generated usin
 │   │   └── ...
 │   └── NO.n/
 │       └── ...
-└── Multi-session_registration_*.csv  # e.g., Multi-session_registration_NO.1.csv
+└── Multi-session_registration_*.csv     # e.g., Multi-session_registration_NO.1.csv
 ```
 
 ## CSV File Descriptions
@@ -73,8 +73,10 @@ The table below summarizes the purpose of each notebook and indicates the corres
 
 | Use case | Notebook | Notes |
 | :----- | :----- | :----- |
+| Population-level analysis of the correlation between behavior and neuronal activity | [`Neural_ensemble_analysis.py`](Cell_type_identification.py)  | Related to Fig. 2 and Supplementary Fig. 5, 6 |
 | Identification of cell types at single-cell level | [`Cell_type_identification.py`](Cell_type_identification.py)  | Related to Fig. 3A, 4B |
-| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | - |
+| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | Related to Fig. 3E |
+| Functional neural network analysis | [`NetworkX_analysis.ipynb`](Cell_type_identification.py)  | Related to Fig. 4 and Supplementary Fig. 7, 8 |
 
 # Acknowledgements
   We thank Academia Sinica Common Mass Spectrometry Facilities for Proteomics and Protein Modification Analysis located at the Institute of Biological Chemistry, Academia Sinica (supported by AS-CFII-108-107), the Transgenic Core Facility located at the Institute of Molecular Biology, Academia Sinica (supported by AS-CFII-108-104), the Mass Spectrometry Facility of the Genomics Core at the Institute of Molecular Biology, Dr. John O’Brien for English editing, and members of Y.-P.H.’s laboratory who relabeled samples for blind experiments. 
