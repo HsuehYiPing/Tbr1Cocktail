@@ -58,7 +58,7 @@ Download the dataset from the release page and arrange the files according to th
 | *_blank_frame.csv            | Lists blank frames or missing data |
         
 # Usage
-The table below summarizes the purpose of each notebook and indicates the corresponding figures in [this paper(https://www.biorxiv.org/content/10.1101/2025.05.29.656761v1.abstract).
+The table below summarizes the purpose of each notebook and indicates the corresponding figures in [this paper](https://www.biorxiv.org/content/10.1101/2025.05.29.656761v1.abstract).
 
 | Use case | Notebook | Notes |
 | :----- | :----- | :----- |
