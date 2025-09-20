@@ -9,13 +9,61 @@ Author affiliations:
 
 Autism spectrum disorders (ASD) are heterogeneous neurodevelopmental disorders caused by both genetic variations and environmental factors. Since synaptic function is particularly susceptible to ASD-linked conditions, we hypothesized that a cocktail of various nutrients that benefit synaptic function, such as zinc, BCAA and serine, would ameliorate various ASD-related phenotypes. We explored the effects of three different concentrations of supplement cocktails on three previously established mouse models (i.e. _Tbr1_<sup>+/–</sup>, _Nf1_<sup>+/–</sup> and _Cttnbp2_ M120I mice), revealing that both one-week and two-month treatments elicited beneficial effects on social behaviors without noticeable side effects. The supplement cocktails affected the synaptic proteomes of mutant mouse brains. In vivo calcium imaging further revealed that one week of supplementation with a cocktail corrected hyperactivity and hyperconnectivity of basolateral amygdalar neurons in _Tbr1_<sup>+/–</sup> mice. Thus, nutrient cocktails containing zinc, BCAA and serine improve synaptic function, modulate neuronal activity and ensembles, and control social behaviors in multiple ASD contexts.
 
+# Installation
 
+
+# Data preparation
+Download the dataset from the release page and arrange the files according to the data structure shown below.
+
+## Data structure
+
+```
+./input_files/
+├── Water/
+│   ├── NO.1/
+│   │   ├── OE/
+│   │   │   ├── *_noised_acc.csv
+│   │   │   ├── *_behavior_period.csv
+│   │   │   └── *_blank_frame.csv
+│   │   └── RSI/
+│   │       ├── *_noised_acc.csv
+│   │       ├── *_behavior_period.csv
+│   │       └── *_blank_frame.csv
+│   ├── NO.2/
+│   │   └── ...
+│   └── NO.n/
+│       └── ...
+└── Cocktail/
+    ├── NO.1/
+    │   ├── OE/
+    │   │   ├── *_noised_acc.csv
+    │   │   ├── *_behavior_period.csv
+    │   │   └── *_blank_frame.csv
+    │   └── RSI/
+    │       ├── *_noised_acc.csv
+    │       ├── *_behavior_period.csv
+    │       └── *_blank_frame.csv
+    ├── NO.2/
+    │   └── ...
+    └── NO.n/
+        └── ...
+```
+
+## CSV File Descriptions
+
+| CSV Filename Pattern        | Description |
+| :-------------------------- | :---------- |
+| *_noised_acc.csv             | Records neuronal activity data |
+| *_behavior_period.csv        | Contains behavioral period annotations |
+| *_blank_frame.csv            | Lists blank frames or missing data |
+        
 # Usage
-1. Identification of cell type at single cell level. (related to Fig 4A, 4B)  
-   --> Cell_type_identification.py
+The table below summarizes the purpose of each notebook and indicates the corresponding figures in this paper.
 
-2. Parsing the cell type across sessions.  
-   --> parsing_cell_type_to_links.py
+| Use case | Notebook | Notes |
+| :----- | :----- | :----- |
+| Identification of cell types at single-cell level | [`Cell_type_identification.py`](notebooks/Cell_type_identification.py)  | Related to Fig. 4A, 4B |
+| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](notebooks/parsing_cell_type_to_links.py) | - |
 
 # Acknowledgements
   We thank Academia Sinica Common Mass Spectrometry Facilities for Proteomics and Protein Modification Analysis located at the Institute of Biological Chemistry, Academia Sinica (supported by AS-CFII-108-107), the Transgenic Core Facility located at the Institute of Molecular Biology, Academia Sinica (supported by AS-CFII-108-104), the Mass Spectrometry Facility of the Genomics Core at the Institute of Molecular Biology, Dr. John O’Brien for English editing, and members of Y.-P.H.’s laboratory who relabeled samples for blind experiments. 
