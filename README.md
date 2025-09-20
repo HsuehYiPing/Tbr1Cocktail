@@ -75,7 +75,7 @@ The table below summarizes the purpose of each notebook and indicates the corres
 | :----- | :----- | :----- |
 | Population-level analysis of the correlation between behavior and neuronal activity | [`Neural_ensemble_analysis.py`](Cell_type_identification.py)  | Related to Fig. 2 and Supplementary Fig. 5, 6 |
 | Identification of cell types at single-cell level | [`Cell_type_identification.py`](Cell_type_identification.py)  | Related to Fig. 3A, 4B |
-| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | Related to Fig. 3E |
+| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | - |
 | Functional neural network analysis | [`NetworkX_analysis.ipynb`](Cell_type_identification.py)  | Related to Fig. 4 and Supplementary Fig. 7, 8 |
 
 # Acknowledgements
