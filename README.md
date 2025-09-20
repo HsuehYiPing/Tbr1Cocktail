@@ -16,46 +16,50 @@ Autism spectrum disorders (ASD) are heterogeneous neurodevelopmental disorders c
 Download the dataset from the release page and arrange the files according to the data structure shown below.
 
 ## Data structure
+Some neuronal data may be missing due to temporary hardware connection failures during recording. Corresponding `_blank_frame.csv` files are provided in such cases.
+The files `*_acc.csv` and `Multi-session_registration_*.csv` were generated using [CaImAn](https://github.com/flatironinstitute/CaImAn) (A Python toolbox for large-scale Calcium Imaging Analysis; Giovannucci et al., 2019).
 
 ```
-./input_files/
+./Calcium_imaging_data/
 ├── Water/
 │   ├── NO.1/
 │   │   ├── OE/
-│   │   │   ├── *_noised_acc.csv
+│   │   │   ├── *_acc.csv
 │   │   │   ├── *_behavior_period.csv
-│   │   │   └── *_blank_frame.csv
+│   │   │   └── *_blank_frame.csv          # included only when some neuronal data are missing
 │   │   └── RSI/
-│   │       ├── *_noised_acc.csv
+│   │       ├── *_acc.csv
 │   │       ├── *_behavior_period.csv
 │   │       └── *_blank_frame.csv
 │   ├── NO.2/
 │   │   └── ...
 │   └── NO.n/
 │       └── ...
-└── Cocktail/
-    ├── NO.1/
-    │   ├── OE/
-    │   │   ├── *_noised_acc.csv
-    │   │   ├── *_behavior_period.csv
-    │   │   └── *_blank_frame.csv
-    │   └── RSI/
-    │       ├── *_noised_acc.csv
-    │       ├── *_behavior_period.csv
-    │       └── *_blank_frame.csv
-    ├── NO.2/
-    │   └── ...
-    └── NO.n/
-        └── ...
+├── Cocktail/
+│   ├── NO.1/
+│   │   ├── OE/
+│   │   │   ├── *_acc.csv
+│   │   │   ├── *_behavior_period.csv
+│   │   │   └── *_blank_frame.csv
+│   │   └── RSI/
+│   │       ├── *_acc.csv
+│   │       ├── *_behavior_period.csv
+│   │       └── *_blank_frame.csv
+│   ├── NO.2/
+│   │   └── ...
+│   └── NO.n/
+│       └── ...
+└── Multi-session_registration_*.csv  # e.g., Multi-session_registration_NO.1.csv
 ```
 
 ## CSV File Descriptions
 
 | CSV Filename Pattern        | Description |
 | :-------------------------- | :---------- |
-| *_noised_acc.csv             | Records neuronal activity data |
+| *_acc.csv                    | Records neuronal activity data (generated using CaImAn)|
 | *_behavior_period.csv        | Contains behavioral period annotations |
-| *_blank_frame.csv            | Lists blank frames or missing data |
+| *_blank_frame.csv            | Lists blank frames or missing data (included only when some neuronal data are missing)|
+| `Multi-session_registration_*.csv` | Contains multi-session registration data (generated using CaImAn; one file per mouse) |
         
 # Usage
 The table below summarizes the purpose of each notebook and indicates the corresponding figures in [this paper](https://www.biorxiv.org/content/10.1101/2025.05.29.656761v1.abstract).
