@@ -62,8 +62,8 @@ The table below summarizes the purpose of each notebook and indicates the corres
 
 | Use case | Notebook | Notes |
 | :----- | :----- | :----- |
-| Identification of cell types at single-cell level | [`Cell_type_identification.py`](notebooks/Cell_type_identification.py)  | Related to Fig. 4A, 4B |
-| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](notebooks/parsing_cell_type_to_links.py) | - |
+| Identification of cell types at single-cell level | [`Cell_type_identification.py`](Tbr1Cocktail/Cell_type_identification.py)  | Related to Fig. 4A, 4B |
+| Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](Tbr1Cocktail/parsing_cell_type_to_links.py) | - |
 
 # Acknowledgements
   We thank Academia Sinica Common Mass Spectrometry Facilities for Proteomics and Protein Modification Analysis located at the Institute of Biological Chemistry, Academia Sinica (supported by AS-CFII-108-107), the Transgenic Core Facility located at the Institute of Molecular Biology, Academia Sinica (supported by AS-CFII-108-104), the Mass Spectrometry Facility of the Genomics Core at the Institute of Molecular Biology, Dr. John O’Brien for English editing, and members of Y.-P.H.’s laboratory who relabeled samples for blind experiments. 
