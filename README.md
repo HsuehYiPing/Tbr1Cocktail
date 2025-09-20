@@ -62,7 +62,7 @@ The table below summarizes the purpose of each notebook and indicates the corres
 
 | Use case | Notebook | Notes |
 | :----- | :----- | :----- |
-| Identification of cell types at single-cell level | [`Cell_type_identification.py`](Cell_type_identification.py)  | Related to Fig. 4A, 4B |
+| Identification of cell types at single-cell level | [`Cell_type_identification.py`](Cell_type_identification.py)  | Related to Fig. 3A, 4B |
 | Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | - |
 
 # Acknowledgements
