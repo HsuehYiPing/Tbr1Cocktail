@@ -12,7 +12,7 @@ for dest in dsets:
     cellOE2 = {}
     cellRSI2 = {}
     cells = []
-    with open('input_files/Multi-session_registration_' + dest + '.csv', newline='') as regfile:
+    with open('Calcium_imaging_data/Multi-session_registration_' + dest + '.csv', newline='') as regfile:
         rows = csv.DictReader(regfile)
         for row in rows:
             cells.append(row['label'])
@@ -28,7 +28,7 @@ for dest in dsets:
         val[dt]={}
         for st in dstatus:
             val[dt][st]={}
-            resfile = "input_files/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
+            resfile = "Calcium_imaging_data/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
             with open(resfile, newline='') as infile:
                 rows = csv.DictReader(infile)
                 for row in rows:
@@ -83,7 +83,7 @@ for dest in dsets:
         val2[dt]={}
         for st in dstatus:
             val2[dt][st]={}
-            resfile = "input_files/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
+            resfile = "Calcium_imaging_data/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
             with open(resfile, newline='') as infile:
                 rows = csv.DictReader(infile)
                 for row in rows:
@@ -141,7 +141,7 @@ for dest in dsets:
         for st in dstatus:
             val3[dt][st]={}
             val4[dt][st]={}
-            resfile = "input_files/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
+            resfile = "Calcium_imaging_data/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
             with open(resfile, newline='') as infile:
                 rows = csv.DictReader(infile)
                 for row in rows:
@@ -207,20 +207,20 @@ for dest in dsets:
         val5[dt]={}
         for st in dstatus:
             val5[dt][st]={}
-            resfile = "input_files/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
+            resfile = "Calcium_imaging_data/" + dt + "/" + dest + "/" + st + "/output_files/summary_P.csv"
             with open(resfile, newline='') as infile:
                 rows = csv.DictReader(infile)
                 for row in rows:
                     if dt == "Water":
                         if st == "OE": 
-                            val5[dt][st][cellOE[row['cell ID']]] = row["behavior_activity_mean"]
+                            val5[dt][st][cellOE[row['cell ID']]] = row["mean_activty_during_behavior"]
                         elif st == "RSI": 
-                            val5[dt][st][cellRSI[row['cell ID']]] = row["behavior_activity_mean"]
+                            val5[dt][st][cellRSI[row['cell ID']]] = row["mean_activty_during_behavior"]
                     if dt == "Cocktail":
                         if st == "OE": 
-                            val5[dt][st][cellOE2[row['cell ID']]] = row["behavior_activity_mean"]
+                            val5[dt][st][cellOE2[row['cell ID']]] = row["mean_activty_during_behavior"]
                         elif st == "RSI": 
-                            val5[dt][st][cellRSI2[row['cell ID']]] = row["behavior_activity_mean"]
+                            val5[dt][st][cellRSI2[row['cell ID']]] = row["mean_activty_during_behavior"]
             infile.close()
             print(dt + "_" + st + "_" + dest + "_mean_activity done")
             

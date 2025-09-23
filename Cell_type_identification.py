@@ -21,6 +21,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import warnings
 warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning) 
 
+
 dsets = ["NO.1", "NO.2", "NO.3", "NO.8", "NO.13", "NO.15", "NO.16", "NO.20"]
 dstatus = ["OE", "RSI"]
 dtreatments = ["Water", "Cocktail"]
@@ -28,7 +29,7 @@ dtreatments = ["Water", "Cocktail"]
 for dtreatment in dtreatments:
       for dset in dsets:
             for dstat in dstatus:
-                  fdir1 = "input_files/" + dtreatment + "/" + dset + "/" + dstat
+                  fdir1 = "Calcium_imaging_data/" + dtreatment + "/" + dset + "/" + dstat
                   print(fdir1)
                   outputdir = fdir1 + "/output_files"
                   if not os.path.exists(outputdir): os.mkdir(outputdir)
@@ -39,8 +40,8 @@ for dtreatment in dtreatments:
                   rsifile = ""
                   
                   for filename in os.listdir(fdir1):
-                        if fnmatch.fnmatch(filename, '*OE.csv'): oefile = fdir1 + "/" + filename
-                        if fnmatch.fnmatch(filename, '*RSI.csv'): rsifile = fdir1 + "/" + filename
+                        if fnmatch.fnmatch(filename, '*OE_behavior_period.csv'): oefile = fdir1 + "/" + filename
+                        if fnmatch.fnmatch(filename, '*RSI_behavior_period.csv'): rsifile = fdir1 + "/" + filename
                         if fnmatch.fnmatch(filename, '*acc*.csv'): accfile = fdir1 + "/" + filename 
                         if fnmatch.fnmatch(filename, '*blank*.csv'): blankfile = fdir1 + "/" + filename
 
@@ -869,7 +870,7 @@ for dtreatment in dtreatments:
                                                 Regression_index.append(LR)
 
                                     df = pd.DataFrame (list (zip(cell_ID, cs_all, cs_P_all, behavior_responsive, pearson_r, pearson_p, Regression_index, behavior_activity_mean)), 
-                                                      columns = ["cell ID", "similarity", "CS P *", "behavior correlation *", "pearson_r", "pearson_p", "Experience_dependent_cell_type", "behavior_activity_mean"])
+                                                      columns = ["cell ID", "similarity", "CS P *", "behavior correlation *", "pearson_r", "pearson_p", "Experience_dependent_cell_type", "mean_activty_during_behavior"])
                                     #save to csv file
                                     df.to_csv(fdir + '/summary_P.csv', index= False)
 
@@ -878,7 +879,7 @@ for dtreatment in dtreatments:
                                     for idx in range (len(accnpt)):
                                           cell_id = idx +1
                                           cell_ID.append (cell_id)
-                                    df = pd.DataFrame(np.nan, index=cell_ID, columns = ["similarity", "CS P *", "behavior correlation *", "pearson_r", "pearson_p", "Experience_dependent_cell_type", "behavior_activity_mean"])
+                                    df = pd.DataFrame(np.nan, index=cell_ID, columns = ["similarity", "CS P *", "behavior correlation *", "pearson_r", "pearson_p", "Experience_dependent_cell_type", "mean_activty_during_behavior"])
                                     df.index.names= ["cell ID"]
                                     #save to csv file
                                     df.to_csv(fdir + '/summary_P.csv')
