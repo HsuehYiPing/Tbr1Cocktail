@@ -10,13 +10,19 @@ Author affiliations:
 Autism spectrum disorders (ASD) are heterogeneous neurodevelopmental disorders caused by both genetic variations and environmental factors. Since synaptic function is particularly susceptible to ASD-linked conditions, we hypothesized that a cocktail of various nutrients that benefit synaptic function, such as zinc, BCAA and serine, would ameliorate various ASD-related phenotypes. We explored the effects of three different concentrations of supplement cocktails on three previously established mouse models (i.e. _Tbr1_<sup>+/–</sup>, _Nf1_<sup>+/–</sup> and _Cttnbp2_ M120I mice), revealing that both one-week and two-month treatments elicited beneficial effects on social behaviors without noticeable side effects. The supplement cocktails affected the synaptic proteomes of mutant mouse brains. In vivo calcium imaging further revealed that one week of supplementation with a cocktail corrected hyperactivity and hyperconnectivity of basolateral amygdalar neurons in _Tbr1_<sup>+/–</sup> mice. Thus, nutrient cocktails containing zinc, BCAA and serine improve synaptic function, modulate neuronal activity and ensembles, and control social behaviors in multiple ASD contexts.
 
 # Installation
-From the top-level directory of the project, install the required Python packages using:
+From the top-level directory of the project, create the Conda environment and install all required Python packages using:
 
 ```bash
-pip install -r requirements.txt
+conda env create -f environment.yml
 ```
 
-> This will install all the dependencies listed in `requirements.txt`. -e .
+This will install all the dependencies listed in environment.yml.
+
+After creating the environment, activate it:
+
+```bash
+conda activate calcium_env
+```
 
 
 # Data preparation
