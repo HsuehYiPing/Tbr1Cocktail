@@ -76,7 +76,7 @@ The table below summarizes the purpose of each notebook and indicates the corres
 | Population-level analysis of the correlation between behavior and neuronal activity | [`Neural_ensemble_analysis.ipynb`](Neural_ensemble_analysis.ipynb)  | Related to Fig. 2 and Supplementary Fig. 5, 6 |
 | Identification of cell types at single-cell level | [`Cell_type_identification.py`](Cell_type_identification.py)  | Related to Fig. 3A, 4B |
 | Parsing cell types across sessions  | [`parsing_cell_type_to_links.py`](parsing_cell_type_to_links.py) | - |
-| Functional neural network analysis | [`NetworkX_analysis.ipynb`](Cell_type_identification.py)  | Related to Fig. 4 and Supplementary Fig. 7, 8 |
+| Functional neural network analysis | [`NetworkX_analysis.ipynb`](NetworkX_analysis.ipynb)  | Related to Fig. 4 and Supplementary Fig. 7, 8 |
 
 # Acknowledgements
   We thank Academia Sinica Common Mass Spectrometry Facilities for Proteomics and Protein Modification Analysis located at the Institute of Biological Chemistry, Academia Sinica (supported by AS-CFII-108-107), the Transgenic Core Facility located at the Institute of Molecular Biology, Academia Sinica (supported by AS-CFII-108-104), the Mass Spectrometry Facility of the Genomics Core at the Institute of Molecular Biology, Dr. John O’Brien for English editing, and members of Y.-P.H.’s laboratory who relabeled samples for blind experiments. 
