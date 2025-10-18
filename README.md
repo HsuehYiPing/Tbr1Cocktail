@@ -1,4 +1,4 @@
-# Dietary supplement cocktails improve social behaviors and neural ensembles of multiple autism models
+# Low-dose mixtures of dietary nutrients ameliorate behavioral deficits in multiple mouse models of autism
 
 Tzyy-Nan Huang<sup>1</sup>, Ming-Hui Lin<sup>1,2</sup>, Tsan-Ting Hsu<sup>1</sup>, Chen-Hsin Yu<sup>1</sup>,
 and Yi-Ping Hsueh<sup>1,2</sup>
